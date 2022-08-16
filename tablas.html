@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h2> Tablas </h2>
+            <table border="1">
+                <!--columnas-->
+                <tr>
+                    <th>
+                        Col1
+                    </th>
+                    <th>
+                        Col2
+                    </th>
+                    <th>
+                        Col3
+                    </th>
+                </tr>
+                <!--filas-->
+                <tr>
+                    <td>
+                        Col1Fila1
+                    </td>
+                    <td>
+                        Col2Fila1
+                    </td>
+                    <td>
+                        Col3Fila1
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Col1Fila2
+                    </td>
+                    <td>
+                        Col2Fila2
+                    </td>
+                    <td>
+                        Col3Fila2
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        Col1Fila3, pero ocupa 3
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Col1Fila4
+                    </td>
+                    <td colspan="2">
+                        Col2Fila4, pero ocupa 3
+                    </td>
+                </tr>
+            </table>
+        </section>
+
+        <form action="index.html"
+            method="get">
+            <input type="hidden" 
+            name="param" 
+            value="valor">
+            <button>
+                Volver
+            </button>
+        </form>
+
+        <a href="index.html"> Volver a Index </a>
+    </main>
+</body>
+</html>
