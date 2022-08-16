@@ -6,17 +6,22 @@
     <body>
             <h1> PAGINA DE FORMULARIOS!!! </h1>
             <h2> FORMULARIO 1 </h2>
-            <form>
+            <form action="registrar formulario.html"
+                method="post">
                 <label> Nombre: </label>
-                <input type="text">
+                <input type="text"
+                    name="username">
                 <label> Password: </label>
                 <input type="password"
                     maxlength="4"
-                    size="4">
+                    size="4"
+                    name="password">
                 <input type="submit" value="Enviar">
             </form>
+
             <h3> FORMULARIO 2</h3>
-            <form>
+            <form action="registrar formulario.html"
+                method="get">
                 <label> Opción 1: </label>
                 <input type="checkbox">
                 <br>
@@ -34,6 +39,41 @@
                     name="opciones">
             </form>
             <br>
+
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            Nombre:
+                        </td>
+                        <td>
+                            <input name="nombre"
+                            type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Nacimiento:
+                        </td>
+                        <td>
+                            <input name="nacimiento"
+                            type="date">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Edad:
+                        </td>
+                        <td>
+                            <input name="edad"
+                            type="number" 
+                            min="1" max="130"
+                            step="5">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
             <a href="index.html">
                 Volver a Index
             </a>
