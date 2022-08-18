@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Estilos y CSS </title>
+
+    <!-- Forma 1 de usar CSS: Interna -->
+    <style> 
+        /* Comentario de CSS */
+        p{
+            color:aquamarine;
+            font-size: 20px;
+        }
+        p2{
+            color: green
+        }
+
+        section {
+            background-color: yellow;
+        }
+
+        #btn {
+            background-color: aqua;
+        }
+    </style>
+    <!-- Forma 3 de usar CSS: Externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="sectionPrincipal">
+            <!-- Forma 2 de usar CSS: Online
+                aplicar estilo en linea usando atributo style
+                los estilos aplicados en linea predominan sobre CSS
+                -->
+            <h1 style="color:red">
+                CSS
+            </h1>
+            <h2> 
+                Subtítulo 
+            </h2>
+            <p style="font-weight: bolder;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque laboriosam vel, reiciendis sit, iusto fugit sed recusandae hic neque natus at eius libero aperiam dolorum consectetur exercitationem odio alias ullam?
+            </p>
+            <p2>
+                Probando
+            </p2>
+        </section>
+
+        <section style="background-color: green;">
+            <h1>
+                Fondo verde en la nueva seccion!
+            </h1>
+        </section>
+
+        <section>
+            <form action="alta.html">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" 
+                    name="nombre"
+                    type="text" 
+                    maxlength="50" 
+                    required>
+                
+                <button id="btn">
+                    Enviar
+                </button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
