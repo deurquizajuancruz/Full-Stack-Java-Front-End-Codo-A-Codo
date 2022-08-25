@@ -1,0 +1,25 @@
+/* selector de etiqueta*/
+* {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+/* herencia */
+main .html {
+    background-color: aqua;
+}
+
+main .css {
+    background-color: blue;
+}
+
+main section.css {
+    background-color: brown !important;
+}
+
+#htmlid {
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 10px;
+}
