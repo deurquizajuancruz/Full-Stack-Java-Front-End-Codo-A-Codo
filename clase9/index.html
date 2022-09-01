@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title >Clase 9</title>
+    <style>
+        /*selector hijo*/
+        p > strong {
+            color: red;
+        }
+        div > img {
+            width: 100px;
+        }
+        
+        img:hover {
+            border: 5px solid yellow;
+        }
+
+        div.div1 > p {
+            color: blue;
+        }
+        /* adyacentes = tag + tag 
+        modifica solo al que esta al lado */
+        h1 + p {
+            font-weight: bolder;
+        }
+        /* general 
+        modifica a todos */
+        h2 ~ p {
+            height: 15px;
+            background-color: aqua;
+        }
+
+        /*pseudoclases*/
+        a:visited {
+            color: lightgreen;
+        }
+        a:active {
+            color: turquoise;
+        }
+
+        .links:hover {
+            font-weight: bolder;
+        }
+        div.primerhijo {
+            text-align: center;
+        }
+        div.primerhijo p{
+            display: inline;
+        }
+        /* first child */
+        div.primerhijo p:first-child {
+            font-weight: bolder;
+            color: lightblue;
+            font-size: 35px;
+        }
+        /*last child */
+        div.primerhijo p:last-child {
+            font-weight: lighter;
+            color: darkblue;
+            font-size: 50px;
+        }
+
+        .table {
+            width: 200px;
+            height: 200px;
+            padding: 2px;
+            border: 20px;
+        }
+
+        /*nth*/
+        ol li:nth-child(3) {
+            background-color: antiquewhite;
+        }
+        table tr:first-child {
+            font-size: 25px;
+            background-color: lightyellow;
+        }
+        table tr:nth-child(odd) {
+            background-color: brown;
+        }
+        table tr:hover{
+            font-size: 1.2cm;
+            font-style: italic;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <!-- hijos -->
+    <div>
+        <p>
+            selector de Hijos <strong> PADRE </strong> > HIJO
+        </p>
+        <p>
+            texto no strong <strong> texto strong </strong> texto no strong
+        </p>
+    </div>
+    
+    <div class="div1">
+        <img src="1532686.jpg">
+        <p> texto azul </p>
+
+    </div>
+    <p> texto no azul </p>
+
+    <!-- hermanos adyacentes -->
+    <div>
+        <h1> Hermanos adyacentes </h1>
+        <p> texto 1 </p>
+        <p> texto 2 </p>
+        <p> texto 3 </p>
+    </div>
+    <!-- hermano general -->
+    <div>
+        <h2> Hermanos generales </h2>
+        <p> texto 1, hermano de h2 </p>
+        <p> texto 2, hermano de h2 </p>
+        <p> texto 3, hermano de h2 </p>
+    </div>
+
+    <!--pseudoclases-->
+    <div class="links">
+        <h3> LINKS: </h3>
+    <p> 
+        Verde: visitados 
+        <br>
+        Azul: no visitados
+        <br>
+        Arrastrar: turquesa
+        <br>
+        Pasar: negrita
+    </p>
+    <ul>
+        <li>
+            <a href="http://google.com"> Link a Google </a>
+        </li>
+        <li>
+            <a href="http://facebook.com"> Link a Facebook </a>
+        </li>
+    </ul>
+    </div>
+
+    <!-- first child-->
+    <div class="primerhijo">
+        <p>
+            p 1
+        </p>
+        <p>
+            p 2
+        </p>
+        <p>
+            p 3
+        </p>
+        <p>
+            p 4
+        </p>
+    </div>
+
+    <ol>
+        <li>primero</li>
+        <li>segundo</li>
+        <li>tercero</li>
+    </ol>
+
+    <table border="1" class="table">
+        <tr>
+            <th>
+                col1
+            </th>
+            <th>
+                col2
+            </th>
+        </tr>
+        <tr>
+            <td>
+                1x1
+            </td>
+            <td>
+                1x2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                2x1
+            </td>
+            <td>
+                2x2
+            </td>
+        </tr>
+        <tr>
+            <td>
+                3x1
+            </td>
+            <td>
+                3x2
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
