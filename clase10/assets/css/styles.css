@@ -49,6 +49,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.labienvenida {
+    display: block; 
+    margin: 0px auto;
+    /* ponerlo al centro */
+}
 
 section {
     height: 650px;
@@ -74,8 +79,20 @@ html {
 }
 
 /*aplico los colores: gradients */
+.mensaje {
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+}
 
-section:first-child {
+.sec1 {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.sec2 {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+.sec3 {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+/*section:first-child {
     background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 section:nth-child(2) {
@@ -83,13 +100,13 @@ section:nth-child(2) {
 }
 section:last-child{
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-}
+}*/
 
 /*cambio a boton */
 section a {
     display: inline-block;
     width: 70px;
-    height: 25px;
+    height: 30px;
     background-color: lightyellow;
     border-radius: 10px;
     text-align: center;
