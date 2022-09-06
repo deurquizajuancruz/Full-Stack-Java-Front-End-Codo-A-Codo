@@ -1,0 +1,110 @@
+.container {
+    background-color: aqua;
+    padding: 5px;
+}
+.container div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: beige;
+}
+
+/*flex*/
+.container-flex {
+    display: flex;
+    padding:3px;
+    background-color: coral;
+    justify-content: center;/*flex-start | center | flex-end */
+    /*para cambiar de fila a columna */
+    flex-direction: row;
+    width: 100%;
+    height: 250px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container-flex div {
+    margin: 2px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*media query, sirve para cambiar estilos en determinadas resoluciones */
+@media screen and (max-width: 600px) {
+    .container-flex {
+        flex-direction: column;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 650px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    align-items: center;
+}
+
+section img {
+    width: 500px;
+}
+
+.content-text {
+    padding: 5px;
+    margin: 10px;
+}
+
+/*scrolling*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*aplico los colores: gradients */
+
+section:first-child {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+section:nth-child(2) {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+section:last-child{
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+/*cambio a boton */
+section a {
+    display: inline-block;
+    width: 70px;
+    height: 25px;
+    background-color: lightyellow;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+}
+
+section a:hover {
+    font-weight: bolder;
+}
+section a:active {
+    opacity: 0.5;
+}
+
+@media screen and (max-width:1000px) {
+    section {
+        flex-direction: column;
+    }
+}
