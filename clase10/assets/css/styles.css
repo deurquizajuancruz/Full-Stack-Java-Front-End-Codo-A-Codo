@@ -125,3 +125,46 @@ section a:active {
         flex-direction: column;
     }
 }
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightyellow;
+}
+
+.menu-container a {
+    text-decoration: none;
+    height: 40px;
+    width: 70px;
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 10px;
+}
+.menu-container ul {
+    list-style-type: none;
+}
+
+.menu-container ul li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.menu-container ul a {
+    border-radius: 10px;
+    display: inline-block;
+    height: 40px;
+    width: 70px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: rgb(243, 255, 176);
+}
+
+header nav {
+    position: sticky;
+    top: 0;
+}
+header img {
+    width: 100%;
+    height: 650px;
+    display: block;
+}
