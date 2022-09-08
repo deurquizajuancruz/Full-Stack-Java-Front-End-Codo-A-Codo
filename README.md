@@ -1,4 +1,3 @@
-# codo-22549-frontend-2c
-codo frontend 22549
-# cambio desde la web
-# cambio localmente
+# Codo a Codo Front-End
+Comisión 22549  
+Segundo cuatrimestre
