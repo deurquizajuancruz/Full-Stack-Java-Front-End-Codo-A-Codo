@@ -1,0 +1,25 @@
+.navbar {
+    background-color: rgba(53,58,64,255);
+    padding-top: 0%;
+}
+
+.d-inline-block {
+    margin-left: 100px;
+}
+
+.navbar-brand {
+    color: white;
+    margin-right: 800px;
+}
+
+.nav-item1 a {
+    color: white;
+}
+
+.nav-item a {
+    color: gray;
+}
+
+.nav-item2 a {
+    color: green;
+}
