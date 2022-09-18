@@ -8,18 +8,60 @@
 }
 
 .navbar-brand {
-    color: white;
+    color: rgba(254,251,253,255);
     margin-right: 800px;
 }
 
 .nav-item1 a {
-    color: white;
+    color: rgba(254,251,253,255);
 }
 
 .nav-item a {
-    color: gray;
+    color: rgba(142,150,155,255);
 }
 
 .nav-item2 a {
-    color: green;
+    color: rgba(46,143,69,255);
+}
+
+.wrap {
+    width: 1920px;
+    height: 800px;
+    display:flex;
+    align-items:center;
+    background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),url(/integrador/assets/img/ba1.jpg);
+    background-size:cover;
+    background-position: left;
+}
+
+.wrap-txt {
+    color: white;
+    text-align:right;
+    font-size:150%;
+    margin-left: 1000px;
+}
+
+.btn1 {
+    background-color: rgba(40,167,68,255);
+    border-color: rgba(40,167,68,255);
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    border: 2px rgba(40,167,68,255);
+    font-size:100%;
+}
+
+.btn2 {
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size:100%;
 }
