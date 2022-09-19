@@ -1,17 +1,21 @@
+/* TODA LA BARRA DE NAVEGACION */
 .navbar {
     background-color: rgba(53,58,64,255);
     padding-top: 0%;
 }
 
+/*LOGO*/
 .d-inline-block {
     margin-left: 100px;
 }
 
+/*TITULO DE LA PAG*/
 .navbar-brand {
     color: rgba(254,251,253,255);
-    margin-right: 800px;
+    /*margin-right: 800px;*/
 }
 
+/* PESTAÑAS DE LA BARRA */
 .nav-item1 a {
     color: rgba(254,251,253,255);
 }
@@ -24,9 +28,16 @@
     color: rgba(46,143,69,255);
 }
 
+/*@media (min-width:1400px) {
+    .navbar-brand {
+        margin-right: 800px;
+    }
+}*/
+
+/*IMAGEN CONFERENCIA*/
 .wrap {
-    width: 1920px;
-    height: 800px;
+    width: 1903px;
+    height: 700px;
     display:flex;
     align-items:center;
     background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),url(/integrador/assets/img/ba1.jpg);
@@ -34,6 +45,7 @@
     background-position: left;
 }
 
+/*TEXTO CONFERENCIA*/
 .wrap-txt {
     color: white;
     text-align:right;
@@ -41,6 +53,7 @@
     margin-left: 1000px;
 }
 
+/*BOTON TICKETS CONFERENCIA*/
 .btn1 {
     background-color: rgba(40,167,68,255);
     border-color: rgba(40,167,68,255);
@@ -54,6 +67,7 @@
     font-size:100%;
 }
 
+/*BOTON ORADOR CONFERENCIA*/
 .btn2 {
     color: white;
     padding-top: 10px;
