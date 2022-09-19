@@ -16,6 +16,12 @@
 }
 
 /* PESTAÑAS DE LA BARRA */
+
+.navbar-collapse {
+    flex-grow: 0;
+    padding-right: 100px;
+}
+
 .nav-item1 a {
     color: rgba(254,251,253,255);
 }
