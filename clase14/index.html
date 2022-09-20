@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 14</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <style>
+        input {
+            width: 70px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <h1> Calculadora</h1>
+            <!--Operador 1-->
+            <label for="op1"></label>
+            <input id="op1" type="number">
+            <!--Operacion matematica-->
+            <label for="operacion"></label>
+            <input id="operacion" type="text" size="5">
+            <!--Operador 2-->
+            <label for="op2"></label>
+            <input id="op2" type="number">
+            <!--Resultado-->
+            <label>=</label>
+            <label id="resultado"></label>
+            <br>
+            <!--Realiza calculo-->
+            <button onclick="calcular();">
+                Calcular
+            </button>
+            <button onclick="borrar();">
+                Borrar
+            </button>
+        </section>
+
+        <section>
+            <div class="calculadora-container">
+                <div class="calculadora-container__numeros">
+                    <div onclick="guardar(0)">0</div>
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                </div>
+                <div class="calculadora-container-operaciones">
+                    <div>+</div>
+                    <div>-</div>
+                    <div>/</div>
+                    <div>*</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="./js/ejercicio.js"></script>
+</html>

@@ -12,11 +12,9 @@
 /*TITULO DE LA PAG*/
 .navbar-brand {
     color: rgba(254,251,253,255);
-    /*margin-right: 800px;*/
 }
 
 /* PESTAÑAS DE LA BARRA */
-
 .navbar-collapse {
     flex-grow: 0;
     padding-right: 100px;
@@ -33,12 +31,6 @@
 .nav-item2 a {
     color: rgba(46,143,69,255);
 }
-
-/*@media (min-width:1400px) {
-    .navbar-brand {
-        margin-right: 800px;
-    }
-}*/
 
 /*IMAGEN CONFERENCIA*/
 .wrap {
