@@ -43,13 +43,9 @@
     background-position: left;
 }
 
-/*TEXTO CONFERENCIA*/
-.wrap-txt {
-    color: white;
-    text-align:right;
-    font-size:150%;
-    margin-left: 1000px;
-}
+/*#conferencia {
+    background-color: aqua;
+}*/
 
 /*BOTON TICKETS CONFERENCIA*/
 .btn1 {
