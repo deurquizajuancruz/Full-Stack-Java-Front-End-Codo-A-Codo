@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 15</title>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <section>
+        <h1> Notas </h1>
+        <label for="nota1"> Nota 1: </label>
+        <input id="nota1" type="number" min="0" max="10">
+        <label for="nota2"> Nota 2: </label>
+        <input id="nota2" type="number" min="0" max="10">
+        <button onclick="tomarNotas()">
+            Calcular nota
+        </button>
+        <button onclick="borrar()">
+            Borrar
+        </button>
+    </section>
+    <section>
+        <h2> Resultados </h2>
+        Menor: <label id="menor"></label>
+        <br>
+        Mayor: <label id="mayor"></label>
+        <br>
+        Promedio: <label id="promedio"></label>
+        <br>
+    </section>
+</body>
+</html>
