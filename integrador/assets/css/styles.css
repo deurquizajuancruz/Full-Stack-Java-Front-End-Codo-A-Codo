@@ -33,19 +33,43 @@
 }
 
 /*IMAGEN CONFERENCIA*/
-.wrap {
-    width: 1903px;
-    height: 700px;
-    display:flex;
-    align-items:center;
-    background: linear-gradient(to bottom, rgb(0 0 0 / .5),rgb(0 0 0 / .5)),url(/integrador/assets/img/ba1.jpg);
-    background-size:cover;
-    background-position: left;
+#conferencia img {
+    filter: brightness(50%);
+    position: relative;
+    overflow: hidden;
 }
 
-/*#conferencia {
-    background-color: aqua;
-}*/
+#conferencia .titulo{
+    font-size: 3rem;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 60%;
+    left: 80%;
+}
+
+#conferencia .texto {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+
+#conferencia .btn1{
+    font-size: 1rem;
+    position: absolute;
+    top: 95%;
+    left: 84%;
+}
+
+#conferencia .btn2 {
+    font-size: 1rem;
+    position: absolute;
+    top: 95%;
+    left: 74%;
+}
 
 /*BOTON TICKETS CONFERENCIA*/
 .btn1 {
