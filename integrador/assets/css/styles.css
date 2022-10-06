@@ -33,10 +33,13 @@
 }
 
 /*IMAGEN CONFERENCIA*/
+
+/*
 #conferencia img {
     filter: brightness(50%);
     position: relative;
     overflow: hidden;
+    padding-bottom: 1%;
 }
 
 #conferencia .titulo{
@@ -44,32 +47,18 @@
     color: white;
     font-weight: 500;
     position: absolute;
-    top: 60%;
-    left: 80%;
+    top: 61%;
+    left: 78%;
 }
 
-#conferencia .texto {
+#conferencia .texto{
     font-size: 1.5rem;
     color: white;
-    font-weight: 500;
+    font-weight:400;
     position: absolute;
-    top: 80%;
-    left: 50%;
-}
-
-#conferencia .btn1{
-    font-size: 1rem;
-    position: absolute;
-    top: 95%;
-    left: 84%;
-}
-
-#conferencia .btn2 {
-    font-size: 1rem;
-    position: absolute;
-    top: 95%;
-    left: 74%;
-}
+    top: 70%;
+    left: 51%;
+}*/
 
 /*BOTON TICKETS CONFERENCIA*/
 .btn1 {
@@ -82,7 +71,8 @@
     padding-right: 20px;
     border-radius: 6px;
     border: 2px rgba(40,167,68,255);
-    font-size:100%;
+    font-size: 1.3rem;
+    position: absolute;
 }
 
 /*BOTON ORADOR CONFERENCIA*/
@@ -95,5 +85,49 @@
     border-radius: 10px;
     border: 1px solid white;
     background-color: transparent;
-    font-size:100%;
+    font-size: 1.3rem;
+    position: absolute;
 }
+
+
+/* ORADORES */
+#oradores .titulo{
+    text-align: center;
+}
+ 
+ .conocea{
+    font-weight: 400;
+ }
+
+ .card-title {
+    text-align: left;
+    font-size:150%;
+ }
+
+ .card-text {
+    text-align: left;
+ }
+
+ .card-img-top {
+    height: 30rem;
+}
+
+.badge {
+    text-align: left;
+}
+.text-bg-info {
+    background-color: rgba(24,163,185,255)!important;
+    color: white!important;
+}
+
+/*.row {
+    width: 110rem;
+    margin-left: 11rem;
+    margin-right: 5rem;
+    display: flexbox;
+}
+
+#oradores .row .col {
+    width: 30rem;
+    height: 45rem;
+}*/
