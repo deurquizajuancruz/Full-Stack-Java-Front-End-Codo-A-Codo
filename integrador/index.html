@@ -40,14 +40,52 @@
           </div> 
         </nav>
     </section>
-    <!--
+
+
     <section id="conferencia">
-      <img src="./assets/img/ba1.jpg" class="img-fluid" alt="...">
-      <p class="titulo"> Conf Bs As</p>
-      <button type="button" class="btn2">Quiero ser orador</button>
-      <button type="button" class="btn1">Comprar tickets </button>
+      <div class="container-fluid px-0 texto" id="laConferencia">
+        <div class="carousel slide" id="carousel" data-bs-ride="carousel" data-pause="false">
+          <div class="row justify-content-end">
+            <div class="col-sm-12 col-lg-6">
+              <div class="parrafo text-light bg-transparent text-end position-absolute">
+                <h1>Conf Bs As</h1>
+                <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento
+                  y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del
+                  evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te
+                  esperamos!</p>
+                  <button type="button" class="btn2" href="#convertirse">Quiero ser orador</button>
+                  <button type="button" class="btn1">Comprar tickets </button>
+              </div>
+            </div>
+          </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">        
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/img/ba1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/ba2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/ba3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </section>
-    -->
+
     <section id="oradores">
       <div class="titulo">
         <h5 class="conocea"> CONOCE A LOS </h5>
@@ -94,12 +132,10 @@
 
     <section id="lugaryfecha">
       <p> Lugar y fecha </p>
-      <img src="./assets/img/honolulu.jpg">
     </section>
 
     <section id="convertirse">
       <p> Convertirse </p>
-      <img src="./assets/img/ba2.jpg">
     </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>

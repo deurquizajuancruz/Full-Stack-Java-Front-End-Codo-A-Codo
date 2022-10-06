@@ -1,0 +1,169 @@
+body {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body div {
+    scroll-margin-top: 4.5em;
+}
+
+a {
+    text-decoration: none;
+}
+/*BARRA */
+.navbar {
+    background-color: #373737;
+}
+
+.navbar .navbar-brand {
+    margin-left: 7%;
+    color: #ececec;
+}
+
+.navbar .navbar-brand img {
+    width: 100px;
+}
+
+.navbar li.nav-item a.nav-link {
+    color: #9c9c9c;
+}
+
+.navbar li.nav-item a.nav-link:hover {
+    color: #ececec;
+}
+
+.navbar li.nav-item a.comprarTickets {
+    color: #008b0c;
+}
+
+.navbar li.nav-item a.comprarTickets:hover {
+    color: #27e700;
+}
+
+#navbarSupportedContent {
+    margin-right: 7%;
+}
+
+/*CONFERENCIA*/
+
+.encabezado .carousel-inner {
+    filter: brightness(50%);
+}
+
+.encabezado .jumbotron {
+    top: 30%;
+    z-index: 700;
+    padding-right: 7%;
+}
+
+@media screen and (max-width: 992px) {
+    .encabezado .jumbotron {
+        padding: 0 5%;
+        right: 0%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .encabezado .jumbotron {
+        top: 0%;
+        padding: 0 3%;
+        font-size: 0.7em;
+    }
+
+    .encabezado .jumbotron h1 {
+        margin-bottom: 0.1em;
+    }
+
+    .encabezado .jumbotron p {
+        margin-bottom: 0.5em;
+    }
+
+    .encabezado .jumbotron .btn {
+        padding: 0.25em;
+        font-size: 0.8em;
+    }
+}
+
+.encabezado h1 {
+    font-weight: 600;
+}
+
+#comprarTicketsBtn {
+    background: #008b0c;
+    border: none;
+}
+
+/*ORADORES*/
+
+.losOradores {
+    background-color: #FFF;
+    padding: 0.5em 15%;
+}
+
+.losOradores p {
+    font-size: 0.7em;
+}
+
+.losOradores .card {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.losOradores span {
+    margin-right: 0.3em;
+}
+
+.lugarYFecha {
+    background-color: #333333;
+    color: #FFF;
+    text-align: justify;
+}
+
+.lugarYFecha p {
+    font-size: 0.9em;
+}
+
+.convEnOrador {
+    background-color: #FFF;
+    padding: 1em 25%;
+}
+
+@media screen and (max-width: 992px) {
+    .convEnOrador {
+        padding: 1em 10%;
+    }
+}
+
+.convEnOrador p:nth-child(1) {
+    font-size: 0.7em;
+}
+
+.convEnOrador button {
+    background-color: #91d353;
+    color: #f3f3f3;
+}
+
+.convEnOrador button:hover {
+    background-color: #63a525;
+}
+
+.convEnOrador input:focus,
+.convEnOrador textarea:focus {
+    border-color: #d4d4d4;
+    box-shadow: 0 0 0.25rem 0.25rem #d4d4d4;
+}
+
+.footer {
+    background-color: #0f3544;
+}
+
+.footer a {
+    color: #ececec;
+    font-size: 0.8em;
+    width: 10em;
+}
+
+.footer a:hover {
+    color: #9c9c9c;
+}
