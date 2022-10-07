@@ -40,7 +40,7 @@
 }
 
 .texto .parrafo {
-    top: 50%;
+    top: 40%;
     z-index: 700;
     padding-right: 10rem;
 }
@@ -50,13 +50,13 @@
 }
 
 .texto p{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 400;
 }
 
 @media screen and (min-width:993px )and (max-width:1436px) { /*cuando es mayor a 993px y menor a 1436:*/
     .texto .parrafo{
-        top:15%;
+        top:30%;
         padding-right: 10%;
     }
 
@@ -65,7 +65,7 @@
     }
 
     .texto .parrafo p{
-        font-size:medium;
+        font-size:large;
     }
 
     .texto .btn1 {
@@ -144,33 +144,39 @@
 
 
 /* ORADORES */
-#oradores .titulo{
-    text-align: center;
-}
- 
- .conocea{
+
+.conocea{
     font-weight: 400;
  }
 
- .card-title {
-    text-align: left;
-    font-size:150%;
- }
-
- .card-text {
-    text-align: left;
- }
-
- .card-img-top {
-    height: 30rem;
+#oradores {
+    padding: 0.5rem 15%;
 }
 
-.badge {
-    text-align: left;
+#oradores .titulo{
+    text-align: center;
 }
 
-.row{
-    width: 75%;
-    display: flex;
-    justify-content: center;
+#oradores p {
+    font-size: 1rem;
+}
+
+#oradores .card-title{
+    font-size: 1.7rem;
+}
+
+#oradores .card {
+    margin-bottom: 0.5rem;
+}
+
+#oradores span {
+    margin-right: 0.3rem;
+}
+
+.card-img-top {
+    height: 25rem;
+}
+
+.text-bg-info {
+    color: white!important;
 }
