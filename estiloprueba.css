@@ -111,9 +111,11 @@ a {
 }
 
 .losOradores span {
-    margin-right: 0.3em;
+    margin-right: 0.3rem;
 }
 
+
+/*LUGAR Y FECHA */
 .lugarYFecha {
     background-color: #333333;
     color: #FFF;
@@ -123,6 +125,8 @@ a {
 .lugarYFecha p {
     font-size: 0.9em;
 }
+
+/*CONVERTIRSE */
 
 .convEnOrador {
     background-color: #FFF;
@@ -154,6 +158,7 @@ a {
     box-shadow: 0 0 0.25rem 0.25rem #d4d4d4;
 }
 
+/* FOOTER */
 .footer {
     background-color: #0f3544;
 }
