@@ -149,12 +149,12 @@
     font-weight: 400;
  }
 
-#oradores {
-    padding: 0.5rem 15%;
+.titulo{
+    text-align: center;
 }
 
-#oradores .titulo{
-    text-align: center;
+#oradores {
+    padding: 0.5rem 15%;
 }
 
 #oradores p {
@@ -227,6 +227,51 @@
     padding-left: 0.5rem;
     padding-bottom: 1rem;
     color: white;
+}
+
+/*CONVERTIRSE*/
+.subrayado {
+    border-bottom:1px dotted black;
+}
+
+#convertirse .txt{
+    text-align: center;
+}
+
+#convertirse .row {
+    padding: 1rem 25%;
+}
+
+.mb-3{
+    padding: 1rem 25%;
+    margin-bottom: 0!important;
+}
+
+.mb-3 .form-control {
+    font-size: 150%;
+}
+
+.recuerda{
+    color: rgba(156,150,156,255);
+    margin-bottom: 0;
+}
+
+.botonenviar {
+    padding: 1rem 25%;
+    padding-top: 0;
+    display: grid;
+}
+
+.btn {
+    background-color: rgba(150,201,62,255);
+    border-color: rgba(150,201,62,255);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.btn:hover{
+    background-color: rgba(150,201,62,255)!important;
+    border-color:white!important;
 }
 
 /*FOOTER*/
