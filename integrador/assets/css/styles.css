@@ -180,3 +180,80 @@
 .text-bg-info {
     color: white!important;
 }
+
+/*LUGAR Y FECHA*/
+
+.imagen{
+    padding: 0;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: white;
+}
+
+.lyf {
+    background-color: rgba(53,58,64,255);
+}
+
+.lyf p {
+    font-size: 1.1em;
+}
+
+#lugaryfecha h3{
+    margin-top: 3px;
+}
+
+@media screen and (min-width:992px){
+    .imagen{
+        width: 50%;
+
+    }
+}
+
+.btn3{
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 7px;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.cuadro {
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    color: white;
+}
+
+/*FOOTER*/
+
+.pie{
+    background-color:rgba(31,80,110,255);
+}
+
+.lista{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    list-style: none;
+}
+
+#footer a{
+    width: 12rem;
+    font-size: 18px;
+    color: white;
+}
+
+#footer a:hover {
+    color: black;
+    cursor: pointer;
+}
+
