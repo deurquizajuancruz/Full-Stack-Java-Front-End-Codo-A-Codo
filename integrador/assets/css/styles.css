@@ -1,4 +1,12 @@
 /*BARRA*/
+body,html {
+    overflow-x: hidden;
+}
+
+.carousel-inner {
+    max-height: calc(100vh - 85px);
+}
+
 /* TODA LA BARRA DE NAVEGACION */
 .navbar {
     background-color: rgba(53,58,64,255);
@@ -95,10 +103,6 @@
 }
 
 @media screen and (max-width: 576px) {
-    /*.texto .parrafo {
-        top: 0%;
-    }*/
-
     .texto .parrafo h1 {
         font-size:large;
     }
@@ -174,7 +178,9 @@
 }
 
 .card-img-top {
-    height: 25rem;
+    aspect-ratio: 1;
+    width: 100%;
+    object-fit:cover;
 }
 
 .text-bg-info {
@@ -302,3 +308,34 @@
     cursor: pointer;
 }
 
+/*COMPRAR TICKETS*/
+
+.categorias {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+}
+
+.categorias > div {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgba(135,192,254,255);
+}
+
+.categorias .Trainee {
+    border-color: rgba(147,211,223,255);
+}
+
+.categorias .Junior {
+    border-color: rgba(254,227,139,255);
+}
+
+.categorias span {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.categorias .documentacion {
+    color:gray;
+}
