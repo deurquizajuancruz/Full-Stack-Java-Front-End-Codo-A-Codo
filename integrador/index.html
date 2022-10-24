@@ -8,7 +8,7 @@
   <title>Conf Bs As</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/styles.css">
 </head>
 
 <body>
@@ -193,7 +193,7 @@
 
   <section id="comprar">
     <div class="categorias">
-      <div class="Estudiante">
+      <div>
         <h5>Estudiante</h5>
         <p> Tienen un descuento </p>
         <span>80%</span>
@@ -212,7 +212,42 @@
         <p class="documentacion"> *presentar documentación </p>
       </div>
     </div>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, sapiente?
+    <p class="venta"> VENTA </p>
+    <h2> VALOR DE TICKET $200 </h2>
+    <div class="form-comprar">
+      <div class="forms">
+        <div class="row g-3">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+          </div>
+        </div>
+        <div class="mail col">
+          <input type="text" class="form-control" placeholder="Correo" aria-label="First name">
+        </div>
+        <div class="row g-3">
+          <div class="col">
+            <label for="Cantidad"> Cantidad</label>
+            <input type="text" class="form-control" placeholder="Cantidad" name="Cantidad">
+          </div>
+          <div class="col">
+            <label for="Categorias"> Categoría</label>
+            <select class="form-select" id="floatingSelectGrid" name="Categorias">
+              <option selected>Estudiante</option>
+              <option value="1">Trainee</option>
+              <option value="2">Junior</option>
+            </select>
+          </div>
+        </div>
+        <p class="total"> Total a pagar: $</p>
+      </div>
+      <div class="botones">
+        <button class="btn btn-primary" type="button">Borrar</button>
+        <button class="btn btn-primary" type="button">Resumen</button>
+      </div>
+    </div>
   </section>
 
   <section id="footer">

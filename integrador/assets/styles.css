@@ -280,6 +280,96 @@ body,html {
     border-color:white!important;
 }
 
+/*COMPRAR TICKETS*/
+
+#comprar {
+    width: 40vw;
+    margin: 0 auto;
+    min-width: min-content;
+}
+
+.categorias {
+    display: flex;
+    justify-content:center;
+    gap: 10px;
+    width: 100%;
+}
+
+.categorias > div {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgba(135,192,254,255);
+    width: 100%;
+}
+
+.categorias .Trainee {
+    border-color: rgba(147,211,223,255);
+}
+
+.categorias .Junior {
+    border-color: rgba(254,227,139,255);
+}
+
+.categorias span {
+    display: block;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.categorias .documentacion {
+    color:gray;
+}
+
+#comprar .form-comprar {
+    width: 100%;
+}
+
+#comprar .venta {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#comprar h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.form-comprar > * {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#comprar label {
+    margin-bottom: 10px;
+}
+
+#comprar .total {
+    background-color: rgba(205,228,255,255);
+    font-size: 18px;
+    color:rgba(9,71,138,255);
+    padding: 15px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 10px;
+    max-width: 100%;
+}
+
+#comprar .btn {
+    padding: 0.5rem auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    max-width: calc(50% - 1rem/2);
+    width: 100%;
+}
+
 /*FOOTER*/
 
 .pie{
@@ -306,36 +396,4 @@ body,html {
 #footer a:hover {
     color: black;
     cursor: pointer;
-}
-
-/*COMPRAR TICKETS*/
-
-.categorias {
-    display: flex;
-    justify-content:center;
-    gap: 10px;
-}
-
-.categorias > div {
-    text-align: center;
-    padding: 10px;
-    border: 2px solid rgba(135,192,254,255);
-}
-
-.categorias .Trainee {
-    border-color: rgba(147,211,223,255);
-}
-
-.categorias .Junior {
-    border-color: rgba(254,227,139,255);
-}
-
-.categorias span {
-    display: block;
-    font-weight: bolder;
-    margin-bottom: 20px;
-}
-
-.categorias .documentacion {
-    color:gray;
 }
