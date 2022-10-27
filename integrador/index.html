@@ -218,34 +218,34 @@
       <div class="forms">
         <div class="row g-3">
           <div class="col">
-            <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+            <input type="text" class="form-control" placeholder="Nombre" id="nombre">
           </div>
           <div class="col">
-            <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+            <input type="text" class="form-control" placeholder="Apellido" id="apellido">
           </div>
         </div>
         <div class="mail col">
-          <input type="text" class="form-control" placeholder="Correo" aria-label="First name">
+          <input type="text" class="form-control" placeholder="Correo" id="mail">
         </div>
         <div class="row g-3">
           <div class="col">
             <label for="Cantidad"> Cantidad</label>
-            <input type="text" class="form-control" placeholder="Cantidad" name="Cantidad">
+            <input type="number" min="1" class="form-control" placeholder="Cantidad" name="Cantidad" id="cantidad">
           </div>
           <div class="col">
             <label for="Categorias"> Categoría</label>
-            <select class="form-select" id="floatingSelectGrid" name="Categorias">
-              <option selected>Estudiante</option>
+            <select id="categoria" class="form-select" id="floatingSelectGrid" name="Categorias" >
+              <option value="0" selected>Estudiante</option>
               <option value="1">Trainee</option>
               <option value="2">Junior</option>
             </select>
           </div>
         </div>
-        <p class="total"> Total a pagar: $</p>
+        <p class="pagar"> Total a pagar: $<label id="total"></label></p>
       </div>
       <div class="botones">
-        <button class="btn btn-primary" type="button">Borrar</button>
-        <button class="btn btn-primary" type="button">Resumen</button>
+        <button class="btn btn-primary" type="button" onclick="borrar()">Borrar</button>
+        <button class="btn btn-primary" type="button" onclick="resumen()">Resumen</button>
       </div>
     </div>
   </section>
@@ -267,6 +267,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>
