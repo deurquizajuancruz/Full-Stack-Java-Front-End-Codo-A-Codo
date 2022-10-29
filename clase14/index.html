@@ -1,66 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clase 14</title>
-    <link rel="stylesheet" href="./css/styles.css">
-    <style>
-        input {
-            width: 70px;
-        }
-    </style>
-</head>
-<body>
-    <main>
-        <section>
-            <h1> Calculadora</h1>
-            <!--Operador 1-->
-            <label for="op1"></label>
-            <input id="op1" type="number">
-            <!--Operacion matematica-->
-            <label for="operacion"></label>
-            <input id="operacion" type="text" size="5">
-            <!--Operador 2-->
-            <label for="op2"></label>
-            <input id="op2" type="number">
-            <!--Resultado-->
-            <label>=</label>
-            <label id="resultado"></label>
-            <br>
-            <!--Realiza calculo-->
-            <button onclick="calcular();">
-                Calcular
-            </button>
-            <button onclick="borrar();">
-                Borrar
-            </button>
-        </section>
 
-        <section>
-            <div class="calculadora-container">
-                <div class="calculadora-container__numeros">
-                    <div onclick="guardar(0)">0</div>
-                    <div>1</div>
-                    <div>2</div>
-                    <div>3</div>
-                    <div>4</div>
-                    <div>5</div>
-                    <div>6</div>
-                    <div>7</div>
-                    <div>8</div>
-                    <div>9</div>
-                </div>
-                <div class="calculadora-container-operaciones">
-                    <div>+</div>
-                    <div>-</div>
-                    <div>/</div>
-                    <div>*</div>
-                </div>
-            </div>
-        </section>
-    </main>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <h1>Calculadora</h1>
+    <div class="mostrar">
+        <p> Operando 1: <label id="op1"></label></p>
+        <p> Operación: <label id="operacion"></label></p>
+        <p> Operando 2: <label id="op2"></label></p>
+        <p> Resultado: <label id="resultado"></label></p>
+    </div>
+    <div class="tabla">
+        <table>
+            <tr>
+                <td><button onclick="escribir(1)"> 1</button></td>
+                <td><button onclick="escribir(2)"> 2</button></td>
+                <td><button onclick="escribir(3)"> 3</button></td>
+                <td class="operacion"><button onclick="operar('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="escribir(4)"> 4</button></td>
+                <td><button onclick="escribir(5)"> 5</button></td>
+                <td><button onclick="escribir(6)"> 6</button></td>
+                <td class="operacion"><button onclick="operar('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="escribir(7)"> 7</button></td>
+                <td><button onclick="escribir(8)"> 8</button></td>
+                <td><button onclick="escribir(9)"> 9</button></td>
+                <td class="operacion"><button onclick="operar('*')">*</button></td>
+            </tr>
+            <tr>
+                <td colspan="3" class="cero"><button onclick="escribir(0)"> 0</button></td>
+                <td class="operacion"><button onclick="operar('/')">/</button></td>
+            </tr>
+            <td colspan="4" class="resultado"><button onclick="calcular()">=</button></td>
+        </table>
+    </div>
+
+    <button class="borrar" onclick="borrar()"> Borrar</button>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./calculadora.js"></script>
 </body>
-<script src="./ejercicio.js"></script>
+
 </html>
