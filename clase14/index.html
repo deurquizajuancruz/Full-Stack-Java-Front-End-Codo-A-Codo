@@ -11,42 +11,38 @@
 </head>
 
 <body>
-    <h1>Calculadora</h1>
-    <div class="mostrar">
-        <p> Operando 1: <label id="op1"></label></p>
-        <p> Operación: <label id="operacion"></label></p>
-        <p> Operando 2: <label id="op2"></label></p>
-        <p> Resultado: <label id="resultado"></label></p>
+    <h1 class="titulo">Calculadora</h1>
+    <div class="calculadora">
+        <div class="mostrar">
+            <p>
+                <label id="op1"></label>
+                <label id="operacion"></label>
+                <label id="op2"></label>
+            </p>
+            <p><label id="resultado"></label></p>
+        </div>
+        <div class="botones">
+            <button class="borrar" onclick="borrar()"> CE</button>
+            <button class="funciones"> Mod </button>
+            <button class="funciones"> Div </button>
+            <button class="funciones" onclick="operar('/')">/</button>
+            <button class="numero" onclick="escribir(7)"> 7</button>
+            <button class="numero" onclick="escribir(8)"> 8</button>
+            <button class="numero" onclick="escribir(9)"> 9</button>
+            <button class="funciones" onclick="operar('*')">*</button>
+            <button class="numero" onclick="escribir(4)"> 4</button>
+            <button class="numero" onclick="escribir(5)"> 5</button>
+            <button class="numero" onclick="escribir(6)"> 6</button>
+            <button class="funciones" onclick="operar('-')">-</button>
+            <button class="numero" onclick="escribir(1)"> 1</button>
+            <button class="numero" onclick="escribir(2)"> 2</button>
+            <button class="numero" onclick="escribir(3)"> 3</button>
+            <button class="funciones" onclick="operar('+')">+</button>
+            <button class="col2 numero" onclick="escribir(0)"> 0</button>
+            <button class="funciones">+/-</button>
+            <button class="funciones" onclick="calcular()">=</button>
+        </div>
     </div>
-    <div class="tabla">
-        <table>
-            <tr>
-                <td><button onclick="escribir(1)"> 1</button></td>
-                <td><button onclick="escribir(2)"> 2</button></td>
-                <td><button onclick="escribir(3)"> 3</button></td>
-                <td class="operacion"><button onclick="operar('+')">+</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="escribir(4)"> 4</button></td>
-                <td><button onclick="escribir(5)"> 5</button></td>
-                <td><button onclick="escribir(6)"> 6</button></td>
-                <td class="operacion"><button onclick="operar('-')">-</button></td>
-            </tr>
-            <tr>
-                <td><button onclick="escribir(7)"> 7</button></td>
-                <td><button onclick="escribir(8)"> 8</button></td>
-                <td><button onclick="escribir(9)"> 9</button></td>
-                <td class="operacion"><button onclick="operar('*')">*</button></td>
-            </tr>
-            <tr>
-                <td colspan="3" class="cero"><button onclick="escribir(0)"> 0</button></td>
-                <td class="operacion"><button onclick="operar('/')">/</button></td>
-            </tr>
-            <td colspan="4" class="resultado"><button onclick="calcular()">=</button></td>
-        </table>
-    </div>
-
-    <button class="borrar" onclick="borrar()"> Borrar</button>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
